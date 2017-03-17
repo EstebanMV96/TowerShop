@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_publish"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.wexu.huckster.control.vendedor.PublishActivity"
+    android:background="@color/colorTextIcons"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+
+    <Space
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"/>
+
+    <!--
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="70dp"
+    -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/add"
+            android:textColor="@color/colorPrimaryText"
+            android:onClick="takePicture" />
+    </FrameLayout>
+
+
+    <Space
+        android:layout_height="10dp"
+        android:layout_width="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:weightSum="6">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryText"
+                android:paddingLeft="10dp"
+                android:hint="Nombre"
+                android:textColorHint="@color/colorSecondaryText"
+                android:id="@+id/nombreProducto" />
+        </TableRow>
+
+        <Space
+            android:layout_height="15dp"
+            android:layout_width="wrap_content"/>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!--TextView
+                android:text="Categoría:"
+                android:background="@color/colorPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryText"/-->
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="10dp"
+                android:prompt="@string/prompt"
+                android:dropDownWidth="match_parent"
+                android:elevation="0dp"
+                android:popupElevation="2dp"
+                android:popupBackground="@color/colorPrimary"
+                android:id="@+id/spinner_categories"
+                android:dropDownSelector="?android:attr/selectableItemBackground"/>
+
+        </TableRow>
+
+
+
+        <Space
+            android:layout_height="15dp"
+            android:layout_width="wrap_content"/>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryText"
+                android:paddingLeft="10dp"
+                android:id="@+id/precioProducto"
+                android:textColorHint="@color/colorSecondaryText"
+                android:hint="Precio"
+                android:inputType="number" />
+        </TableRow>
+
+        <Space
+            android:layout_height="15dp"
+            android:layout_width="wrap_content"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="2"
+
+                android:background="@color/colorPrimaryLight"
+                android:textColor="@color/TcolorPrimaryText"
+                android:paddingLeft="10dp"
+                android:hint="Descripción"
+                android:outlineProvider="bounds"
+                android:textColorHint="@color/colorSecondaryText"
+                android:id="@+id/descriProducto" />
+
+        </TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boton"
+            android:textColor="@color/colorTextIcons"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Publicar"
+            android:onClick="publicar" />
+
+    </TableLayout>
+
+
+</LinearLayout>

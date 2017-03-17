@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wexu.huckster.control.chat.ConversationsFragment">
+
+    <ListView
+        android:id="@+id/leads_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimaryLight"
+        android:dividerHeight="8dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"/>
+
+</FrameLayout>

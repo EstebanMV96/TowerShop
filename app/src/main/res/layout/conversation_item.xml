@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp"
+    android:background="@drawable/elipse1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        tools:text="Sebastián García"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_marginStart="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+
+    <TextView
+        android:id="@+id/txtLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:text="Ultimo"
+        android:textColor="@color/colorSecondaryText"
+        tools:text="donde estas?"
+        android:layout_marginStart="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TowerShop</string>
+    <string name="login">Iniciar sesión con Google para continuar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="action_perfil">Mi perfil</string>
+    <string name="action_comprar">Comprar</string>
+    <string name="prompt">Categoría</string>
+</resources>

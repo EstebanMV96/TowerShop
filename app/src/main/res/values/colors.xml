@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#0097a7</color>
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="colorPrimaryLight">#b2ebf2</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorAccent">#f6970b</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <!--Colores con transparencia-->
+
+    <color name="TcolorPrimaryDark">#7e0097a7</color>
+    <color name="TcolorPrimary">#7E00BCD4</color>
+    <color name="TcolorPrimaryLight">#7EB2EBF2</color>
+    <color name="TcolorTextIcons">#7EFFFFFF</color>
+    <color name="TcolorAccent">#7EFF9800</color>
+    <color name="TcolorPrimaryText">#7e212121</color>
+    <color name="TcolorSecondaryText">#7E757575</color>
+    <color name="TcolorDivider">#7EBDBDBD</color>
+
+</resources>

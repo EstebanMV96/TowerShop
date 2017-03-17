@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wexu.huckster.control.LoginActivity"
+    android:gravity="center"
+    android:background="@drawable/wp"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryText"
+        android:background="#7EFFFFFF"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:id="@+id/textAppName"
+        android:layout_gravity="center"
+        android:fontFamily="casual" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/colorTextIcons"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/textLogin"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

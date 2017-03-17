@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "323589171087",
+    "firebase_url": "https://huckster-af89b.firebaseio.com",
+    "project_id": "huckster-af89b",
+    "storage_bucket": "huckster-af89b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323589171087:android:fdf4acee9f193538",
+        "android_client_info": {
+          "package_name": "com.wexu.huckster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323589171087-5otvb726icmmvj41d6podpql9mjcl03n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoLRaMkcyPX9lwsARLpdv8G4TW1A8MgIw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

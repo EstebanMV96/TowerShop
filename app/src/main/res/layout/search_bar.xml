@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/search_bar"
+    android:title="Buscar"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/elipse"
+        android:drawableStart="@drawable/ic_search1"
+        android:hint="Buscar producto"
+        android:textColorHint="@color/colorDivider"
+        android:textColor="@color/colorPrimaryText"
+        android:paddingLeft="10dp"/>
+
+
+</android.support.v7.widget.Toolbar>

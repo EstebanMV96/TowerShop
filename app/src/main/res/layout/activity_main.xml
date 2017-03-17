@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wexu.huckster.control.MainActivity"
+    android:gravity="center"
+    android:background="@color/colorSecondaryText"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a TowerShop"
+        android:background="@color/colorTextIcons"
+        android:textColor="@color/colorSecondaryText"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:typeface="sans"
+        android:id="@+id/textWelcome"
+        android:elevation="2dp"
+        />
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué quieres hacer?"
+            android:textColor="@color/colorTextIcons"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:typeface="sans"
+            android:id="@+id/textMain"
+            android:elevation="2dp"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sell"
+            android:drawablePadding="0dp"
+            android:id="@+id/btnVender"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/elipse1"
+            android:text="Vender"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textAlignment="center"
+            android:onClick="start"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/buy"
+            android:drawablePadding="8dp"
+            android:id="@+id/btnComprar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/elipse1"
+            android:text="Comprar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:onClick="start"/>
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

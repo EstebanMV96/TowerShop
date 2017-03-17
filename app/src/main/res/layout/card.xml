@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="121dp"
+    android:background="@color/colorTextIcons"
+    tools:context=".control.productos.ProductsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorTextIcons"
+        android:id="@+id/card_product"
+        android:onClick="detalles">
+
+    <ImageView
+        android:id="@+id/imgProdcut"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dona"
+        android:layout_margin="10dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nombre"
+            android:id="@+id/txtProductName"
+            android:textColor="@color/colorSecondaryText"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Descripcion"
+            android:id="@+id/txtProductDescription"
+            android:textColor="@color/colorSecondaryText"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2000"
+            android:id="@+id/txtPrice"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:inputType="number"
+            />
+
+        <TableRow
+            android:background="@drawable/elipse"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="detalles">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactar"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_chat" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contactar al vendedor"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/contacto"
+                android:padding="5dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider">
+
+    </View>
+
+</LinearLayout>

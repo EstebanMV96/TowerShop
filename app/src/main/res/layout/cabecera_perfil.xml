@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_marginTop="16dp"
+    >
+
+    <!-- Logo Rico Pa' Rico -->
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left">
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:text="Juliana"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_gravity="left"
+            android:text="Disponible"
+            android:backgroundTint="@color/colorTextIcons"
+            android:textColorHint="@color/colorAccent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

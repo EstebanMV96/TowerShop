@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".control.vendedor.PublishActivity">
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="201"
+        android:title="Cerrar sesión"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="100"
+        android:title="Menu"
+        android:icon="@mipmap/menu"
+        app:showAsAction="always"
+        android:menuCategory="container"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/action_comprar"
+                android:orderInCategory="200"
+                android:title="@string/action_comprar"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_perfil"
+                android:orderInCategory="300"
+                android:title="@string/action_perfil"
+                app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+
+</menu>
+
